@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "name": "Divakar G",
+      "email": "divakar@example.com",
+      "phone": "9876543210",
+      "address": "Coimbatore, Tamil Nadu",
+      "role": "customer"
+    },
+    {
+      "userId": 2,
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "phone": "9998887776",
+      "address": "Coimbatore",
+      "role": "admin"
+    }
+  ],
+
+  "vehicles": [
+    {
+      "vehicleId": 101,
+      "userId": 1,
+      "brand": "Honda",
+      "model": "Activa 6G",
+      "numberPlate": "TN37AB1234",
+      "year": 2021
+    },
+    {
+      "vehicleId": 102,
+      "userId": 1,
+      "brand": "Hyundai",
+      "model": "i20",
+      "numberPlate": "TN38XY9090",
+      "year": 2019
+    }
+  ],
+
+  "servicePackages": [
+    {
+      "packageId": 1,
+      "name": "Basic Service",
+      "price": 899,
+      "description": "Oil change, water wash, general check-up"
+    },
+    {
+      "packageId": 2,
+      "name": "Full Service",
+      "price": 1499,
+      "description": "Full inspection, oil change, filter cleaning, wash"
+    },
+    {
+      "packageId": 3,
+      "name": "Repair Service",
+      "price": "Based on issue",
+      "description": "Mechanical and electrical repairs"
+    }
+  ],
+
+  "bookings": [
+    {
+      "bookingId": 5001,
+      "userId": 1,
+      "vehicleId": 101,
+      "packageId": 1,
+      "serviceType": "General Service",
+      "serviceDate": "2025-01-15",
+      "timeSlot": "10:00 AM",
+      "pickupRequired": true,
+      "status": "Booked",
+      "paymentId": 9001
+    }
+  ],
+
+  "payments": [
+    {
+      "paymentId": 9001,
+      "bookingId": 5001,
+      "amount": 899,
+      "paymentMode": "UPI",
+      "paymentStatus": "Success",
+      "transactionId": "TXN8921374"
+    }
+  ],
+
+  "adminLogs": [
+    {
+      "logId": 1,
+      "adminId": 2,
+      "action": "Updated Service Package",
+      "timestamp": "2025-01-10T12:30:45"
+    }
+  ]
+}
